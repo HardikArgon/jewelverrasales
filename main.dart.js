@@ -90877,7 +90877,7 @@ A.aBy.prototype={
 $0(){return A.os(this.a,!1).wQ(!0)},
 $S:0}
 A.OH.prototype={
-N(a){return new A.AH("/login","Jewelverra Sales Admin",A.F3(null,A.aTk(B.ak,B.OK),"CrimsonText",B.js,!0),!1,$.aOR(),null)}}
+N(a){return new A.AH("/dashboard","Jewelverra Sales Admin",A.F3(null,A.aTk(B.ak,B.OK),"CrimsonText",B.js,!0),!1,$.aOR(),null)}}
 A.a4u.prototype={}
 A.uL.prototype={}
 A.AP.prototype={}
