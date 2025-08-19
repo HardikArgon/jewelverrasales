@@ -26042,12 +26042,12 @@ p=p.c.a
 o=$.dj
 if(o==null)o=$.dj=new A.fZ()
 o.er(p.Q$)
-if(J.ap(p.at$,"isAdminLogin")!=null){p=$.Z9()
+if(J.ap(p.at$,"isSalesAdminLogin")!=null){p=$.Z9()
 q=q.c.c.a
 o=$.dj
 if(o==null)o=$.dj=new A.fZ()
 o.er(q.Q$)
-q=A.m6(J.ap(q.at$,"isAdminLogin"))
+q=A.m6(J.ap(q.at$,"isSalesAdminLogin"))
 p.sl(0,q===!0)}if($.a6==null)A.Ch()
 q=$.a6
 q.toString
@@ -85889,7 +85889,7 @@ return A.B(A.aDj(!1,new A.ajs(),p,t.y),$async$wi)
 case 2:if(b===!0){p=window.location.href
 p.toString
 if(B.c.iF(p,"/dashboard"))B.c.R(p,0,p.length-10)
-$.Z8().Bs(0,"isAdminLogin",!1)
+$.Z8().Bs(0,"isSalesAdminLogin",!1)
 p=q.c
 p.toString
 A.fT(p,!1).WK(A.atd(new A.ajt(),null,t.z))}return A.D(null,r)}})
@@ -86118,7 +86118,7 @@ A.DL.prototype={
 aF(){this.aS()
 $.a6.p1$.push(new A.alQ(this))},
 Pw(a){this.ap(new A.alK(this,a))},
-abb(){if(this.d.gF().vN())if(this.e.a.a===J.awc($.aw_().gl(0))&&this.f.a.a===J.awc($.avZ().gl(0))){$.Z8().Bs(0,"isAdminLogin",!0)
+abb(){if(this.d.gF().vN())if(this.e.a.a===J.awc($.aw_().gl(0))&&this.f.a.a===J.awc($.avZ().gl(0))){$.Z8().Bs(0,"isSalesAdminLogin",!0)
 A.kZ("Login Successful")
 window.location.href=B.HU.gAE(window.location)+"/responsive"}else A.kZ("Invalid username or password")
 else A.kZ("Please fill all fields")},
@@ -86155,7 +86155,7 @@ q=A.cW("LOGIN",m,m,m,A.cn(m,m,B.i,m,m,m,m,m,m,m,m,18,m,m,B.ae,m,m,!0,m,1.1,m,m,m
 p=A.mv(50,1/0)
 return A.jT(A.jJ(m,new A.wp(q,B.T,new A.cq(m,m,m,r,o,new A.ep(B.aV,B.bX,B.av,s,m,m),B.ab),p,k,B.as,l,m,m),B.ac,!1,m,m,m,m,m,m,m,m,m,m,m,m,m,m,n.gaba(),m,m,m),B.bZ,new A.alI(n),new A.alJ(n),m)}}
 A.alQ.prototype={
-$1(a){var s,r="isAdminLogin",q=$.Z8(),p=q.c
+$1(a){var s,r="isSalesAdminLogin",q=$.Z8(),p=q.c
 p===$&&A.a()
 p=p.c.a
 s=$.dj
