@@ -92380,7 +92380,7 @@ J(a){var s=this,r=null
 return A.vi(r,B.du,A.cL(A.b([B.fG,new A.bQ(B.dG,A.Mn("Add Order",!0,!0,new A.arK(s),s.a.c,s.Q),r),A.bD(new A.ev(new A.arL(s,a),r),1)],t.p),B.E,B.v,B.A),r,r,r)},
 amW(a,b){var s,r,q,p,o,n,m,l,k,j=this,i=null,h=A.bF(12),g=A.b([B.cO,B.dx],t.W)
 g=A.bT(i,B.HV,B.m,i,i,new A.bX(i,i,i,A.bF(12),i,new A.er(B.aU,B.bH,B.av,g,i,i),B.U),i,50,i,i,i,i,50)
-s=j.fw("Order Date",A.a0W(a.b)?A.pA("dd-MM-yyyy").kD(A.ly(J.bM(a.b))):"")
+s=j.fw("Order Date",!A.a0W(a.b)?A.pA("dd-MM-yyyy").kD(A.ly(J.bM(a.b))):"")
 r=a.d
 r=j.fw("Client Name",r==null?i:r.b)
 q=j.fw("Note",a.f)
