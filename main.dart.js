@@ -94940,7 +94940,7 @@ q=A.a9(s,!0,s.$ti.i("o.E"))
 if(q.length===0)return B.DT
 s=A.b6(this.b,m,t.w).w.a.a<850?B.am:B.a7
 p=A.DW(B.c4,1)
-o=A.b([A.tb(A.b(["Name","Email","Phone","Total Order","Total Order Perches","Total Order Sell","Actions"],t.s),m,m,B.aY,!0,m,m)],t.nk)
+o=A.b([A.tb(A.b(["Name","Email","Phone","Total Order","Total Order Purchase","Total Order Sell","Actions"],t.s),m,m,B.aY,!0,m,m)],t.nk)
 n=new A.fT(q,A.Y(q).i("fT<1>"))
 B.b.O(o,n.gdU(n).cL(0,new A.aws(l,this.c),t.jH).eb(0))
 return A.bG(m,A.jQ(A.DV(p,o,B.dH,B.em),new A.au(12,12,12,12),s),B.m,B.aY,m,m,m,m,m,m,m,m,1/0)},
