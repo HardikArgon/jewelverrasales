@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <!--
     If you are serving your web app in a path other than the root, change the
@@ -33,6 +33,60 @@
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
-  <script src="flutter_bootstrap.js" async></script>
+<script src="flutter_bootstrap.js" async></script>
+<script>
+  (function () {
+    // Block developer shortcuts
+    function blockKeyEvents(e) {
+      if (
+        e.key === 'F12' ||
+        (e.ctrlKey && e.shiftKey && ['I', 'J', 'C'].includes(e.key)) ||
+        (e.ctrlKey && e.key === 'U')
+      ) {
+        e.preventDefault();
+        e.stopImmediatePropagation();
+      }
+    }
+
+    // Block right-click
+    function blockContextMenu(e) {
+      e.preventDefault();
+      e.stopImmediatePropagation();
+    }
+
+    // Attach listeners
+    function attachBlockers() {
+      window.addEventListener('keydown', blockKeyEvents, true);
+      window.addEventListener('keyup', blockKeyEvents, true);
+      window.addEventListener('keypress', blockKeyEvents, true);
+      window.addEventListener('contextmenu', blockContextMenu, true);
+    }
+
+    // MutationObserver to re-attach if removed
+    const observer = new MutationObserver(() => {
+      attachBlockers();
+    });
+
+    // Observe document for changes that may remove listeners
+    observer.observe(document, { childList: true, subtree: true });
+
+    // Periodic re-binding (in case event listeners are nuked)
+    setInterval(() => {
+      attachBlockers();
+    }, 1000);
+
+    // Initial attach
+    attachBlockers();
+  })();
+
+  window.addEventListener('load', function() {
+    _flutter.loader.loadEntrypoint({
+      serviceWorker: { serviceWorkerVersion },
+      onEntrypointLoaded: function(engineInitializer) {
+        engineInitializer.initializeEngine().then(appRunner => appRunner.runApp());
+      }
+    });
+  });
+</script>
 </body>
 </html>
