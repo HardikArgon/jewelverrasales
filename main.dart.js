@@ -97344,7 +97344,7 @@ g.push(new A.kW(B.It,"Payment",5))
 g.push(new A.kW(B.Ir,"Log Out",6))
 h=A.aL(a,i,t.w).w
 s=t.p
-p=A.c1(A.b([B.cu,new A.AO(A.aUs(i,i,new A.yY("assets/images/JEWELVERRA.webp",i,i)),60,B.i,B.CE,i),B.bw,A.c1(A.b([A.aCK(r,A.c5(i,i,B.FU,i,i,i,i,i,i,i,i,20,i,i,B.e2,i,i,!0,i,i,i,i,i,i,i,i),i),B.ma,A.aCK(q,A.c5(i,i,A.P(B.d.ai(178.5),232,238,238),i,i,i,i,i,i,i,i,18,i,i,i,i,i,!0,i,i,i,i,i,i,i,i),B.aG)],s),B.r,B.o,B.t),B.bw,new A.qe(i,0.5,10,10,B.i,i),B.et],s),B.r,B.o,B.t)
+p=A.c1(A.b([B.cu,new A.AO(A.aUs(i,i,new A.yY("assets/images/Jewelverra.webp",i,i)),60,B.i,B.CE,i),B.bw,A.c1(A.b([A.aCK(r,A.c5(i,i,B.FU,i,i,i,i,i,i,i,i,20,i,i,B.e2,i,i,!0,i,i,i,i,i,i,i,i),i),B.ma,A.aCK(q,A.c5(i,i,A.P(B.d.ai(178.5),232,238,238),i,i,i,i,i,i,i,i,18,i,i,i,i,i,!0,i,i,i,i,i,i,i,i),B.aG)],s),B.r,B.o,B.t),B.bw,new A.qe(i,0.5,10,10,B.i,i),B.et],s),B.r,B.o,B.t)
 o=A.b([],s)
 for(n=this.e,m=0;m<g.length;++m){l=g[m]
 k=n===l.c
