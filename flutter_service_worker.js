@@ -3,11 +3,11 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"flutter_bootstrap.js": "f7e25cddec16614d0b6f7e30729e864a",
+const RESOURCES = {"flutter_bootstrap.js": "83eb91c1753e3da3d02e3611c5df6092",
 "version.json": "da803c9352fd2ecb76292dc92a1d813b",
 "index.html": "7efc7c591b8d2246eee5eb6efe72b390",
 "/": "7efc7c591b8d2246eee5eb6efe72b390",
-"main.dart.js": "f21b1c84db57e96de073095b52aeac0a",
+"main.dart.js": "a2a38875abcda1ffeecb6d57287dad22",
 "flutter.js": "383e55f7f3cce5be08fcf1f3881f585c",
 "favicon.png": "3e236079b3244c9e6c5c541319f36f65",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
@@ -23,7 +23,7 @@ const RESOURCES = {"flutter_bootstrap.js": "f7e25cddec16614d0b6f7e30729e864a",
 "assets/packages/fluttertoast/assets/toastify.css": "a85675050054f179444bc5ad70ffc635",
 "assets/shaders/ink_sparkle.frag": "ecc85a2e95f5e9f53123dcaf8cb9b6ce",
 "assets/AssetManifest.bin": "d30b8e49042ab583d43962130a041e4e",
-"assets/fonts/MaterialIcons-Regular.otf": "5cf6b2e6f7fdebe0686ea47cb05358c6",
+"assets/fonts/MaterialIcons-Regular.otf": "2ff0b2b595e4dc69a7ac6ae3a1166e6a",
 "assets/assets/images/Jewelverra.webp": "1ad831af0ab7dc1e2ba9c14d2d3b00f8",
 "assets/assets/fonts/Exo-Regular.ttf": "e05978f93ce35d38eed7bf1a002b342c",
 "assets/assets/fonts/Exo-Medium.ttf": "3773afc058be1a1efca510f9168a3c2a",
