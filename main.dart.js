@@ -96972,9 +96972,9 @@ j=j==null?b:B.d.k(j)}if(a)i=b
 else{i=a0.as
 i=i==null?b:B.d.k(i)}if(a)h=b
 else{h=a0.at
-h=h==null?b:B.d.k(h)}g=a?b:a0.ax
+h=h==null?b:B.d.k(h)}if((a?b:a0.ax)!=null){g=a?b:a0.ax
 if(g==null)g=0
-g=A.aIG("#,##0.##").hi(g)
+g=A.aIG("#,##0.##").hi(g)}else g=""
 f=a?b:a0.ay
 a=a?b:a0.z
 if(q==null)q=""
@@ -97169,10 +97169,9 @@ a7=B.c.aM(B.c.aM(a4.a.a))
 a4=A.oP(a7,null)
 if(a4==null)a4=A.hQ(a7)
 a5=a5.a.a
-a7=B.c.aM(B.c.aM(A.fc(a5,",","")))
+if(B.c.aM(a5).length!==0){a7=B.c.aM(B.c.aM(A.fc(a5,",","")))
 a5=A.oP(a7,null)
-if(a5==null)a5=A.hQ(a7)
-if(a5==null)a5=0
+if(a5==null)a5=A.hQ(a7)}else a5=null
 s=15
 return A.t(A.Kw(new A.f1(l,a,k,j,i,h,g,f,e,d,c,a3,a4,a5,B.c.aM(a6.a.a))),$async$ob)
 case 15:a8=b0
