@@ -33,6 +33,43 @@
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
+<script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+<script>
+  window.renderExcel = (base64Data, divId) => {
+    if (typeof XLSX === 'undefined') return;
+
+    const workbook = XLSX.read(base64Data, { type: 'base64' });
+    const sheetName = workbook.SheetNames[0];
+    const sheet = workbook.Sheets[sheetName];
+
+    // Convert sheet to JSON array including blank cells
+    const jsonData = XLSX.utils.sheet_to_json(sheet, { header: 1, defval: '' });
+
+    // Filter out fully empty rows
+    const filteredData = jsonData.filter(row => row.some(cell => cell.toString().trim() !== ''));
+
+    // Build HTML table
+    let htmlStr = '<table style="border-collapse: collapse; font-family: Arial, sans-serif; font-size: 10px; width:100%;">';
+    filteredData.forEach(row => {
+      htmlStr += '<tr>';
+      row.forEach(cell => {
+        let cellContent = cell;
+
+        // If cell is URL, make it clickable
+        if (typeof cell === 'string' && (cell.startsWith('http://') || cell.startsWith('https://'))) {
+          cellContent = `<a href="${cell}" target="_blank">${cell}</a>`;
+        }
+
+        htmlStr += `<td style="border:1px solid #999; padding:4px; min-width:30px; min-height:20px;">${cellContent}</td>`;
+      });
+      htmlStr += '</tr>';
+    });
+    htmlStr += '</table>';
+
+    const container = document.getElementById(divId);
+    container.innerHTML = htmlStr;
+  };
+</script>
 <script src="flutter_bootstrap.js" async></script>
 <script>
   (function () {
