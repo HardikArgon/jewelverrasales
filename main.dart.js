@@ -116870,7 +116870,7 @@ $1(a){var s,r,q,p,o,n,m=this,l=null,k=a.a,j=a.b,i=m.a
 if(i!=null){s=m.b.length
 r=k===s-(J.d($.cZ().gj(0),$.d7().gj(0))?2:1)}else r=!1
 if(r)return new A.bA(B.m4,A.e4(i.$0(),l,l),l)
-if(J.d($.cZ().gj(0),$.d7().gj(0))&&k===m.b.length-1&&m.c!=null)return new A.bA(B.m4,A.e4(m.c.$0(),l,l),l)
+if((A.aG(i)||J.d($.cZ().gj(0),$.d7().gj(0)))&&k===m.b.length-1&&m.c!=null)return new A.bA(B.m4,A.e4(m.c.$0(),l,l),l)
 if(j instanceof A.h)return new A.bA(B.bA,j,l)
 i=m.d
 q=i==null?l:i.$1(j)
